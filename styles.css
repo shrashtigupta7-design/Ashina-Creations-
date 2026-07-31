@@ -431,3 +431,22 @@
   /* ---------- reveal on scroll ---------- */
   .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease, transform 0.7s ease;}
   .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* ---------- about ---------- */
+.about-section{background:var(--chalk);}
+.about-grid{
+  display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center;
+}
+@media (max-width:860px){ .about-grid{grid-template-columns:1fr;} }
+.about-text h2{font-size:clamp(1.7rem,3vw,2.3rem);margin:14px 0 18px;}
+.about-text p{color:var(--text-soft);font-size:1rem;line-height:1.65;margin-bottom:16px;}
+.about-stats{display:grid;gap:18px;}
+.about-stat-card{
+  background:var(--card);border-radius:12px;padding:22px 20px;
+  box-shadow:var(--shadow);text-align:center;
+}
+.about-stat-num{
+  font-family:'Space Mono',monospace;font-weight:700;
+  font-size:1.6rem;color:var(--ink);margin-bottom:4px;
+}
+.about-stat-label{color:var(--text-soft);font-size:0.85rem;}
